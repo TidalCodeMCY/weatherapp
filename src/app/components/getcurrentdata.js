@@ -1,4 +1,4 @@
-import { createCurrent, createCurrentLocation } from './createcurrent';
+import { createCurrentLocation } from './createcurrent';
 
 export function getCurrentWeather(location) {
     fetch(
@@ -21,18 +21,16 @@ export function getCurrentWeather(location) {
             const currentHumidity = response.current.humidity;
 
             createCurrentLocation(
-                currentCountry,
-                currentTimeDate,
-                currentName,
-                currentRegion
-            );
-            createCurrent(
                 currentTempF,
                 currentTempC,
                 currentFeelsF,
                 currentFeelsC,
                 currentHumidity,
-                currentCondition
+                currentCondition,
+                currentCountry,
+                currentTimeDate,
+                currentName,
+                currentRegion
             );
         });
 }

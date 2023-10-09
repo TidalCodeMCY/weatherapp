@@ -18,7 +18,9 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "date-and-time": "^3.0.3",
     "eslint-config-wesbos": "^3.2.3",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4"
   }
 }

@@ -4,6 +4,18 @@ body {
 
 }
 
+#headercontainer {
+    display: grid;
+    grid-template-columns: 22% 78%;
+    align-items: center;
+    justify-items: center;
+}
+
+#currentweather {
+    margin: 0;
+    font-size: 36px;
+}
+
 #rootdiv {
     display: grid;
     grid-template-rows: 15% 80% 5%;
@@ -17,6 +29,21 @@ body {
     opacity: 80%;
 }
 
+a:visited {
+    color: aqua;
+}
+
+#searchbar::placeholder {
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+#searchbar::-ms-input-placeholder {
+    /* Edge 12 -18 */
+    color: white;
+}
+
 #searchbar {
     margin-bottom: 10px;
     width: 20%;
@@ -24,6 +51,9 @@ body {
     font-size: 16px;
     background-color: aliceblue;
     border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    color: white;
 }
 
 #header {
@@ -44,4 +74,78 @@ body {
     height: 100%;
     text-align: center;
     border-radius: 0 0 5px 5px;
+}
+
+/* The below code will controll the look of the current weather cards created */
+#basecard {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    align-items: center;
+    justify-items: center;
+    height: 360px;
+    width: 550px;
+    background-color: rgba(0, 0, 0, .7);
+    color: white;
+    border-radius: 5px;
+
+}
+
+#containerone,
+#containertwo,
+#containerthree {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+#humidity {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+#tempf,
+#tempc {
+    font-size: 18px;
+    text-align: center;
+}
+
+#country {
+    text-align: center;
+    margin-top: 0;
+}
+
+#name {
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 40px;
+}
+
+#innercontainerfour {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+#feelf,
+#feelc {
+    font-size: 18px;
+    text-align: center;
+}
+
+#date {
+    text-align: center;
+    font-size: 20px;
+}
+
+#time {
+    display: grid;
+    align-items: end;
+    justify-items: end;
+}
+
+#innercontainersix {
+    display: grid;
+    height: 100%;
 }
